@@ -8,24 +8,24 @@ namespace BasicCorePrograms
 {
     class FlipCoinHeadOrTail
     {
-        public static void FindFlipCount()
+        public static void FindFlipCoinCount()
         {
-            int tailcount = 0, headcount = 0;
+            int tailCount = 0, headCount = 0;
             Random random = new Random();
-            Console.WriteLine("Enter nuber of times to flip a coin");
-            int numbofTimes = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i <= numbofTimes; i++)
+            Console.WriteLine("Enter number of times to flipcoin");
+            int numbOfTimes = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= numbOfTimes; i++)
             {
                 double input = random.NextDouble();
                 if (input < 0.5)
-                    tailcount++;
+                    tailCount++;
                 else
-                    headcount++;
+                    headCount++;
             }
-            Console.WriteLine("headcount:{0} tailcount:{1}", headcount, tailcount);
-            double tailPercentage = (tailcount * 100) / numbofTimes;
-            double headPercentage = (headcount * 100) / numbofTimes;
-            Console.WriteLine("Head Percentage:{0}% Tail Percentage:{1}%", headPercentage, tailPercentage);
+            Console.WriteLine("headCount:{0} tailCount:{1}", headCount, tailCount);
+            double tailPercentage = (tailCount * 100) / numbOfTimes;
+            double headPercentage = (headCount * 100) / numbOfTimes;
+            Console.WriteLine("Head Percentage:{0}% tail Percentage:{1}%", headPercentage, tailPercentage);
         }
     }
 }

@@ -19,7 +19,7 @@ namespace BasicCorePrograms
             {
                 case 1:
                     //FLIP COIN
-                    FlipCoinHeadOrTail.FindFlipCount();
+                    FlipCoinHeadOrTail.FindFlipCoinCount();
                     break;
                 case 2:
                     //LEAP YEAR
