@@ -14,7 +14,7 @@ namespace BasicCorePrograms
 
             Console.Write("Enter a number:");//input from User
             int num = Convert.ToInt32(Console.ReadLine());
-            int result = num * 2; //num*2 if 2*2==4
+            int result = num * num; //num*num if 12*12==144
             Console.WriteLine(result);//Op
             Console.ReadLine();
         }
